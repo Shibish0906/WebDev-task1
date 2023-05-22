@@ -1,0 +1,115 @@
+.body{
+  background-color: gray;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board{
+  background: white;
+  width: 90vmin;
+  height: 90vmin;
+  display: grid;
+  grid-template-columns: repeat(21,1fr);
+  grid-template-rows: repeat(21,1fr);
+}
+
+#score{
+  position:absolute;
+  top:50px;
+  left:200px;
+  font-size: 30px;
+}
+
+#sequence{
+  position: absolute;
+  right:70px;
+  top:50px;
+
+}
+
+#leaderBoard{
+  position:absolute;
+  top:125px;
+  left:200px;
+  font-size: 30px;
+}
+
+#timer{
+  position: absolute;
+  top:175px;
+  left:200px;
+  
+}
+
+.snakeHead{
+  background-color: green;
+}
+
+.snakeBody{
+  background-color: greenyellow;
+  border-color: rgb(101, 97, 97);
+}
+
+.food1{
+  background-color: violet;
+  border-radius: 50%;
+}
+
+.food2{
+  background-color: rgb(36, 137, 170);
+  border-radius: 50%;
+}
+
+.food3{
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.food4{
+  background-color: red;
+  border-radius: 50%;
+}
+
+.upButton{
+  position: absolute;
+  border: 4px;
+  height:30px;
+  width:40px;
+  bottom:200px;
+  left:245px;
+  border-radius: 50%;
+}
+
+.downButton{
+  position: absolute;
+  font-size: medium;
+  height:30px;
+  width:50px;
+  bottom:100px;
+  left:235px;
+  border-radius: 50%;
+}
+
+.leftButton{
+  position: absolute;
+  height:30px;
+  width:40px;
+  bottom:150px;
+  left:175px;
+  border-radius: 50%;
+} 
+
+
+.rightButton{
+  position: absolute;
+  height:30px;
+  width:40px;
+  bottom:150px;
+  left:300px;
+  border-radius: 50%;
+} 
+

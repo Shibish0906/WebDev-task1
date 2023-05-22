@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequence Safari</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="body">
+    <div id="score">SCORE : 0</div>
+    <div id="leaderBoard">HIGHSCORE : 0</div>
+    <div id="board"></div>
+    <div id="timer">REMAINING TIME : 30</div>
+    <div id="sequence">The Sequence to eat the food is... <br>Violet<br>Blue<br>Yellow<br>Red</div>
+  </div>
+  <div class="upButton" , onclick="moveUp()">UP</div>
+  <div class="downButton" , onclick="moveDown()">DOWN</div>
+  <div class="leftButton" , onclick="moveLeft()">LEFT</div>
+  <div class="rightButton" , onclick="moveRight()">RIGHT</div>
+  <script>
+    function moveUp(){
+      //console.log("up");
+      snakeMoving=true;
+      headDirection.x=0;
+      headDirection.y=-1;
+    }
+    function moveDown(){
+      headDirection.x=0;
+      snakeMoving=true;
+      headDirection.y=1;
+    }
+    function moveLeft(){
+      headDirection.x=-1;
+      snakeMoving=true;
+      headDirection.y=0;
+    }
+    function moveRight(){
+      headDirection.x=1;
+      snakeMoving=true;
+      headDirection.y=0;
+    }
+  </script>
+
+</body>
+<script src="game.js"></script>
+</html>
